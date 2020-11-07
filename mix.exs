@@ -14,7 +14,7 @@ defmodule Metex.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :httpoison]
+      extra_applications: [:logger, :httpoison, :json]
     ]
   end
 
@@ -23,8 +23,8 @@ defmodule Metex.MixProject do
     [
       {:dep_from_hexpm, "~> 0.3.0"},
       {:ex_doc, "~> 0.23"},
-      {:httpoison, "~> 1.7.0"},
-      {:json, "~> 0.3.0"},
+      {:httpoison, "~> 1.0"},
+      {:json, "~> 1.3"},
       {:hackney, "~> 1.16.0"}
     ]
   end
