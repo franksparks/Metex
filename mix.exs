@@ -23,8 +23,9 @@ defmodule Metex.MixProject do
     [
       {:dep_from_hexpm, "~> 0.3.0"},
       {:ex_doc, "~> 0.23"},
-      {:httpoison, "~> 0.9.0"},
-      {:json, "~> 0.3.0"}
+      {:httpoison, "~> 1.7.0"},
+      {:json, "~> 0.3.0"},
+      {:hackney, "~> 1.16.0"}
     ]
   end
 end
