@@ -16,11 +16,13 @@ defmodule Metex.Worker do
 
     case(result) do
       {:ok, name, temp, temp_min, temp_max, humidity} ->
-        "Ciudad: #{name} /-/
-        Temperatura actual: #{temp}°C /-/
-        Mínima: #{temp_min}°C /-/
+        "
+        Ciudad: #{name}
+        Temperatura actual: #{temp}°C
+        Mínima: #{temp_min}°C
         Máxima: #{temp_max}°C
-        Humedad: #{humidity}%."
+        Humedad: #{humidity}%.
+        ---------------------"
 
       :error ->
         "#{location} not found."
